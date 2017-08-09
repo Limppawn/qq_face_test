@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UIViewController alloc]init];
     [self.window makeKeyAndVisible];
+    
+    self.window.rootViewController =[RootViewController new];
     return YES;
 }
 
